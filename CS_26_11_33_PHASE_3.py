@@ -717,5 +717,5 @@ H1=hit1/access
 H2=hit2/access
 mr1=(access-hit1)/access
 mr2=(access-hit2)/access
-print("Tavg =", H1 * T1 + mr1 * (H2 * T2 +mr2 *T3 ))
+print("Tavg =", H1 * T1 + (1-H1) * (H2 * T2 +(1-H2) *T3 ))
 #print(dict1)
